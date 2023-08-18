@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.lightBoxShadow {
+  box-shadow: 0px 10.899999618530273px 7.239999771118164px 0px
+      rgba(110, 139, 151, 0.18),
+    0px 26.200000762939453px 19.09000015258789px 0px rgba(110, 139, 151, 0.28),
+    0px 49.33000183105469px 35.939998626708984px 0px rgba(110, 139, 151, 0.37),
+    0px 88.01000213623047px 64.11000061035156px 0px rgba(110, 139, 151, 0.47),
+    0px 164.60000610351562px 119.9000015258789px 0px rgba(110, 139, 151, 0.61),
+    0px 394px 250px 0px rgba(110, 139, 151, 0.95);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.darkBoxShadow {
+  box-shadow: 0px 10.899999618530273px 7.239999771118164px 0px
+      rgba(0, 0, 0, 0.18),
+    0px 26.200000762939453px 19.09000015258789px 0px rgba(0, 0, 0, 0.28),
+    0px 49.33000183105469px 35.939998626708984px 0px rgba(0, 0, 0, 0.37),
+    0px 88.01000213623047px 64.11000061035156px 0px rgba(0, 0, 0, 0.47),
+    0px 164.60000610351562px 119.9000015258789px 0px rgba(0, 0, 0, 0.61),
+    0px 394px 250px 0px rgba(0, 0, 0, 0.95);
 }
