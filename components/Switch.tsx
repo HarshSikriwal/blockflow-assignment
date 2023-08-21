@@ -8,7 +8,7 @@ function Switch() {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <button
-      className="text-3xl"
+      className="text-3xl z-50"
       onClick={() =>
         setTheme((p) => {
           if (p === "dark") {
