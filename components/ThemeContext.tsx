@@ -14,13 +14,13 @@ export const ThemeContext = createContext<
 >({
   theme: "light",
   setTheme: () => null,
-  up: true,
+  up: false,
   setUp: () => null,
 });
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<themeProps>("light");
-  const [up, setUp] = useState(true);
+  const [up, setUp] = useState(false);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, up, setUp }}>

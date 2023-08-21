@@ -23,12 +23,21 @@
 }
 
 .lightCircle {
-  background: linear-gradient(180deg, #ffd700 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffd700 0%,
+    22%,
+    rgba(255, 255, 255, 1) 100%
+  );
   box-shadow: 0px -50px 100px 0px rgba(255, 234, 128, 0.5),
     -10px 0px 20px 0px rgba(255, 234, 128, 0.5),
     10px 0px 20px 0px rgba(255, 234, 128, 0.5);
 }
 
 .darkCircle {
-  background: rgba(34, 51, 109, 0.3);
+  background: linear-gradient(180deg, #22336d 0%, rgb(25, 35, 73) 100%);
+}
+
+#circle {
+  left: calc(50% - 550px);
 }
