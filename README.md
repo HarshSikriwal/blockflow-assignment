@@ -2,6 +2,16 @@
 Please make sure you have node and npm (yarn or pnpm works too) installed in your system.
 
 ## Getting Started
+
+Clone this repository using,
+```bash
+git clone https://github.com/HarshSikriwal/blockflow-assignment.git
+```
+then switch to this project directory using,
+```bash
+cd blockflow-assignment
+```
+
 First, Install the required dependencies using,
 ```bash
 npm install
