@@ -9,24 +9,24 @@ function Circle() {
   useEffect(() => {
     y.on("change", () => {
       if (y.get() === "-83%") setUp(true);
-      if (y.get() === "40%") setUp(false);
+      if (y.get() === "50%") setUp(false);
     });
   }, [y]);
 
   const gradient = {
     light: {
-      y: "40%",
+      y: "50%",
     },
     dark: {
       // ,
-      y: "-83%",
+      y: "-85%",
     },
   };
   return (
     <motion.div
       initial={{
         position: "fixed",
-        y: "-82%",
+        y: "-85%",
       }}
       id="circle"
       animate={theme === "light" ? "light" : "dark"}
