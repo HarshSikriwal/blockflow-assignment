@@ -8,7 +8,7 @@ function Circle() {
   const y = useMotionValue("-130%");
   useEffect(() => {
     y.on("change", () => {
-      if (y.get() === "-83%") setUp(true);
+      if (y.get() === "-85%") setUp(true);
       if (y.get() === "50%") setUp(false);
     });
   }, [y]);
